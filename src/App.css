@@ -1,0 +1,15 @@
+.App{
+  max-width: 1440px;
+  min-height: 1024px;
+  margin: 0 auto;
+  background: url(content/images/taking_notes.png) no-repeat;
+  background-position-y: 218px;
+  background-position-x: 520px;
+}
+.wrapContent {
+  max-width: 776px;
+  margin: 0 23px 0 23px;
+}
+.header_ToDo {
+  display: flex;
+}
