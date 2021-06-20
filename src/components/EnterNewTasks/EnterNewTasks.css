@@ -47,3 +47,7 @@ textarea {
     background: rgba(47, 128, 237, 0.8);
     border: 1px solid rgba(47, 128, 237, 0.8);
 }
+.disabled{
+    background: #c2c2c2 !important;
+    border: 1px solid #c2c2c2 !important;
+}

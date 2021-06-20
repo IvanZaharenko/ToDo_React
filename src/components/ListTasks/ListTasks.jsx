@@ -3,20 +3,25 @@ import './ListTasks.css';
 import Task from "./Task/Task";
 
 class ListTasks extends Component {
-
+    
     render() {
         const {store} = this.props;
-        let result = store.map(task => (
-                <Task
-                    key={store.id}
-                    store={task}
-                    handleDeleteTask={this.props.handleDeleteTask}
-                />
-            )
-        );
-        return (
-            <div className="listToDo">
-                {result}
+         return (
+            <div className="listToDo" >
+                {
+                    this.props.tasks.map(task => (
+                        <Task
+                            key = {task.id}
+                            store={task}
+                            clickDoneTask={this.props.clickDoneTask}
+                            hoverHiddenElement={this.props.hoverHiddenElement}
+                            hoverVisibleElement = {this.props.hoverVisibleElement}
+                            handleDeleteTask={this.props.handleDeleteTask}
+                            clickImportantTask={this.props.clickImportantTask}
+                            
+                        />)
+                    )
+                    }
             </div>
         )
     }
